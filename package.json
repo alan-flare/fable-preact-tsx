@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "dotnet tool restore && dotnet fable watch src --runFast vite",
+    "start": "dotnet tool restore && dotnet fable watch src --sourceMaps --runFast vite",
     "build": "dotnet tool restore && dotnet fable src --run tsc -b && vite build",
     "preview": "vite preview",
     "clean": "dotnet fable clean src --yes"
